@@ -1,15 +1,20 @@
 {
+  "homepage": "https://InstaRenov.github.io/InstaRenov-website",
   "name": "website",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build-css": "tailwindcss build src/styles.css -o public/styles.css --watch"
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css --watch",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "tailwindcss": "^3.3.5"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
   }
 }
